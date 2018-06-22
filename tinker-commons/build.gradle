@@ -7,10 +7,10 @@ group rootProject.ext.GROUP
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':third-party:aosp-dexutils')
-    compile project(':third-party:bsdiff-util')
-    compile project(':third-party:tinker-ziputils')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':third-party:aosp-dexutils')
+    implementation project(':third-party:bsdiff-util')
+    implementation project(':third-party:tinker-ziputils')
 }
 
 task buildTinkerSdk(type: Copy, dependsOn: [build]) {
